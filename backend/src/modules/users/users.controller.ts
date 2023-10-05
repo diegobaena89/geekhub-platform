@@ -19,4 +19,5 @@ export class UsersController {
   // @Post para criar usuario
   // @Put para atualizar usuario
   // @Delete para deletar usuario
+  // testar com o insomnia
 }
