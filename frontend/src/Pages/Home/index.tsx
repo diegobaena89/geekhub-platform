@@ -1,5 +1,8 @@
+import React from "react";
 import Header from "../../components/Header";
 import background from "../../assets/background.svg"
+import Gameboy from "../components/Gameboy";
+
 
 function Home() {
     return (
@@ -10,11 +13,11 @@ function Home() {
             }}>
             <Header />
             <article
-            className="text-left h-200 ml-11 absolute"
-            style={{ bottom: '10rem' }}
+                className="text-left h-200 ml-11 absolute"
+                style={{ bottom: '10rem' }}
             >
                 <h1 className="text-custom-gray max-w-md overflow-x-hidden"
-                  style={{ fontSize: '1.1rem'}}
+                    style={{ fontSize: '1.1rem' }}
                 >
                     Somos uma plataforma<br />
                     que conecta colecionadores<br />
@@ -29,6 +32,7 @@ function Home() {
                     </button>
                 </div>
             </article>
+            <Gameboy />
         </section>
     )
 }
