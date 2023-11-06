@@ -1,0 +1,155 @@
+svg {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+     #contours {
+       fill:none;
+       stroke:#ffffff;
+       stroke-width:2;
+       stroke-miterlimit:10;
+       stroke-dasharray: 2500;
+       stroke-dashoffset: 2500;
+       animation: draw 3s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+     }
+     #elements-contours {
+       fill: none;
+       stroke:#ffffff;
+       stroke-width:2;
+       stroke-miterlimit:10;
+       stroke-dasharray: 1350;
+       stroke-dashoffset: 1350;
+       animation: draw 4s;
+       animation-delay: 1s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+     }
+     #details {
+       fill: none;
+       stroke:#ffffff;
+       stroke-width:1;
+       stroke-miterlimit:10;
+       stroke-dasharray: 1350;
+       stroke-dashoffset: 1350;
+       animation: draw 3s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+     }
+     #lignes-details {
+       fill: none;
+       stroke:#ffffff;
+       stroke-miterlimit: 10;
+       stroke-dasharray: 200;
+       stroke-dashoffset: 200;
+       animation: draw 4s;
+       animation-delay: 1s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+     }
+     #croix {
+       fill-opacity: 0;
+       fill: #fff;
+       animation: show 1s;
+       animation-delay: 1s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+     }
+     #A {
+       fill-opacity: 0;
+       fill: #fff;
+       animation: show 1s;
+       animation-delay: 1s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+     }
+     #B {
+       fill-opacity: 0;
+       fill: #fff;
+       animation: show 1s;
+       animation-delay: 2s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+      }
+     #ecran {
+       fill-opacity: 0;
+       fill: #fff;
+       animation: show 1s;
+       animation-delay: 3s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+      }
+     #ecran_accueil {
+       max-width: 20%;
+       max-height: 20%;
+       position: absolute;
+       top: 24%;
+       left: 0;
+       right: 0;
+       bottom: 1;
+       margin: auto;
+       opacity: 0;
+       animation: show 1s;
+       animation-delay: 4s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: easy-in;
+     }
+     #battery {
+       fill-opacity: 0;
+       stroke:#ffffff;
+       stroke-miterlimit: 10;
+       stroke-dasharray: 40;
+       stroke-dashoffset: 40;
+       animation: draw 1s;
+       animation-delay: 2s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+      }
+     #light-battery {
+       opacity: 0;
+       fill: green;
+       animation: show 2s;
+       animation-delay: 3s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: ease-in;
+      }
+     #logo-GB {
+       fill-opacity: 0;
+       fill: #fff;
+       animation: show 1s;
+       animation-delay: 3s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: linear;
+      }
+  
+   
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+       }
+  }  
+    
+  @keyframes show {
+     to {
+      fill-opacity: 1;
+      opacity: 1;
+   }
+  }
