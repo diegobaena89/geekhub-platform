@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post } from '@nestjs/common';
 import { UsersService } from './users.service';
 
 @Controller('users')
@@ -13,6 +13,12 @@ export class UsersController {
   @Get('/:id')
   getUserById(id: number): any {
     return this.usersService.getUserById(id);
+  }
+
+  @Post()
+  async createUser(body: any) {
+    const novoRegistro = await this.usersService.createUser(body);
+    return { message: 'Registro criado com sucesso', data: novoRegistro };
   }
 
   // TODO
